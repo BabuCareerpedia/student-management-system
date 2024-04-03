@@ -1,1 +1,1 @@
-# student-management-system
+# auth-service

@@ -1,0 +1,45 @@
+lib-cov
+*.seed
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+results
+tmp
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+.env.local
+.env.*.local
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.vscode/
+.idea/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+*.tsbuildinfo
+
+# ignore yarn.lock
+yarn.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+.pnpm-debug.log*
