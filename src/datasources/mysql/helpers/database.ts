@@ -7,12 +7,14 @@ let pool;
 //const ESCAPE_FIELDS = ['order', 'sort_order', 'sort_by', 'limit', 'offset', 'sortBy', 'sortOrder', 'bulkData'];
 
 export const connectionPool = async ():Promise<Pool> => {
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     try {
         log.info(`sqlConnection()`);
         if (pool) {
             return pool;
         }
         log.debug(`creating connection pool with config: ${JSON.stringify(PG_DATABASE)}`);
+        console.log(PG_DATABASE.host)
         pool = new Pool({
             host: PG_DATABASE.host,
             database: PG_DATABASE.db_name,

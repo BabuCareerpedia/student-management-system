@@ -7,7 +7,7 @@ import * as validation from '@validations';
 import { Router } from 'express';
 import { passportConfiguration } from '@middleware/passport';
 import { MailScopes, strategy } from '@constants/oauth_constants';
-
+import * as demoController from '@controller/demo'
 
 passportConfiguration(passport);
 
@@ -16,7 +16,8 @@ router.use(passport.initialize());
 
 
 router.route('/demo')
-.post()
+.post(demoController.savedemoProfileDetails)
+// .patch(demoController.updatedemoProfileDetails)
 
 
 export default router;
